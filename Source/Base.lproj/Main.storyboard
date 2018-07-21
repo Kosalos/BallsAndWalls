@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dg0-xb-ztm">
-                                <rect key="frame" x="47" y="1298" width="889" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="dg0-xb-ztm">
+                                <rect key="frame" x="32" y="1298" width="919" height="30"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gravity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gH-Tr-16T">
                                         <rect key="frame" x="0.0" y="0.0" width="54.5" height="30"/>
@@ -28,40 +28,46 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ffi-Au-zXK">
-                                        <rect key="frame" x="60.5" y="0.0" width="232" height="31"/>
+                                        <rect key="frame" x="66.5" y="0.0" width="232" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="228" id="IkQ-JU-4cr"/>
                                         </constraints>
+                                        <color key="minimumTrackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="sliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ez4-tC-aBh"/>
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friction" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOT-nd-dlH">
-                                        <rect key="frame" x="298.5" y="0.0" width="57.5" height="30"/>
+                                        <rect key="frame" x="310.5" y="0.0" width="57.5" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="5wQ-5g-ika">
-                                        <rect key="frame" x="362" y="0.0" width="289" height="31"/>
+                                        <rect key="frame" x="380" y="0.0" width="289" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="285" id="2wC-Ma-he0"/>
                                         </constraints>
+                                        <color key="minimumTrackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="sliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="CgJ-sp-2Fk"/>
                                         </connections>
                                     </slider>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Target" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlx-mI-zmo">
-                                        <rect key="frame" x="657" y="0.0" width="49" height="30"/>
+                                        <rect key="frame" x="681" y="0.0" width="49" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" name="highlightColor" catalog="System" colorSpace="catalog"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Cxv-Ym-rX0">
-                                        <rect key="frame" x="712" y="0.0" width="179" height="31"/>
+                                        <rect key="frame" x="742" y="0.0" width="179" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="175" id="OpN-OM-KAN"/>
                                         </constraints>
+                                        <color key="minimumTrackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="maximumTrackTintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <action selector="sliderChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="KXb-HP-e4G"/>
                                         </connections>

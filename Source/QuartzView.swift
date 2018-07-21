@@ -111,9 +111,9 @@ class QuartzView: UIView
                     dx /= distance
                     dy /= distance
                     
-                    // weight the balls according to volume (radius cubed)
-                    let wi = Float.pi * powf(Float(ball[i].radius),3)
-                    let wj = Float.pi * powf(Float(ball[j].radius),3)
+                    // weight the balls according to volume
+                    let wi = Float.pi * powf(Float(ball[i].radius),0.7)
+                    let wj = Float.pi * powf(Float(ball[j].radius),0.7)
                     var weightRatio = CGFloat(wi / (wi + wj))
                     
                     ball[j].dir.x -= gap * dx * weightRatio
@@ -191,8 +191,9 @@ class QuartzView: UIView
     }
 
     func drawBall(_ index:Int, _ pt:CGPoint, _ radius:CGFloat) {
-        let dia:CGFloat = radius * 2
-        img[index].draw(in:CGRect(x:pt.x-radius, y:pt.y-radius, width:dia, height:dia))
+        let rad = radius * 1.2      // enlarge so balls touch correctly
+        let dia:CGFloat = rad * 2
+        img[index].draw(in:CGRect(x:pt.x-rad, y:pt.y-rad, width:dia, height:dia))
     }
 
     override func draw(_ rect: CGRect) {
